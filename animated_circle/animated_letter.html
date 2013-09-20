@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+</head>
+<body>
+    <div id="viz"></div>
+    <script type="text/javascript">
+
+    var sampleSVG = d3.select("#viz")
+        .append("svg")
+        .attr("width", 200)
+        .attr("height", 400);
+
+    sampleSVG.append("circle")
+        .style("stroke", "gray")
+        .style("fill", "green")
+        .attr("r", 30)
+        .attr("cx", 50)
+        .attr("cy", 50)
+      .transition()
+        // .delay(100)
+        .duration(1000)
+        .attr("r", 30)
+        .attr("cx", 50)
+        .attr("cy", 350)
+        // .style("fill", "maroon")
+      .transition()
+        .delay(1500)
+        .duration(1000)
+        .attr("r", 27)
+        .attr("cx", 50)
+        .attr("cy", 200)
+        .style("fill", "maroon")
+      .transition()
+        .delay(3000)
+        .duration(1000)
+        .attr("r", 27)
+        .attr("cx", 150)
+        .attr("cy", 200)
+        .style("fill", "maroon")
+      .transition()
+        .delay(4250)
+        .duration(700)
+        .attr("r", 30)
+        .attr("cx", 150)
+        .attr("cy", 50)
+        .style("fill", "teal")
+      .transition()
+        .delay(5300)
+        .duration(1300)
+        .attr("r", 28)
+        .attr("cx", 157)
+        .attr("cy", 354)  
+
+    </script>
+</body>
+</html>
