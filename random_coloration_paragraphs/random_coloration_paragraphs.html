@@ -12,16 +12,23 @@
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisl turpis, ultrices at tellus et, scelerisque vulputate leo. Sed sit amet congue erat, quis convallis.    
     </p>
     
+    <p class="explanation">
+    	As to whats happening: the Javascript D3 selector is doing a `return "hsl(" + Math.random() * 360 + ", 100%, 50%)" ` and applying that to a css color style.  Pretty neat, eh?
+    </p>
+
     <script type="text/javascript">
 	
 		d3.select(".cool").style("color", function() {
-			return "hsl(" + Math.random() * 360 + ",100%,50%";
+			return "hsl(" + Math.random() * 360 + ",100%,50%)";
 		})
 
 		d3.select(".neat").style("color", function() {
-			return "hsl(" + Math.random() * 360 + ",100%,50%";
+			return "hsl(" + Math.random() * 360 + ",100%,50%)";
 		})
 
+		d3.select(".explanation").style("color", function() {
+			return "hsl(" + Math.random() * 360 + ",100%,50%)";
+		})
     </script>
 </body>
 </html>
