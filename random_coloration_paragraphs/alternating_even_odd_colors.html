@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+</head>
+<body>
+    <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar feugiat ullamcorper. Cras id nunc posuere, interdum ipsum at, hendrerit neque. Etiam rutrum leo erat.
+    </p>
+
+    <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisl turpis, ultrices at tellus et, scelerisque vulputate leo. Sed sit amet congue erat, quis convallis.    
+    </p>
+    
+    <p>
+		Lorem ipsum dolor sit amet, amet congue eratconsectetur  elit. Tellus phasellus nisl, ultrices turpis at et, scelerisque vulputate leo. Sed sit, quis convallis adipiscing.    
+    </p>
+
+    <script type="text/javascript">
+    	d3.selectAll("p").style("color", function(d, i) {
+    		return i % 2 ? "red" : "blue"
+    	})
+    </script>
+</body>
+</html>
+
